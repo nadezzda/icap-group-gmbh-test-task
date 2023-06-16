@@ -1,0 +1,74 @@
+@import '../../scss/_variables.scss';
+
+#branches {
+    .banner {  
+        background: url('../../../public/banner-l.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:contain;
+        padding: 50px;  
+        @media (max-width: $tablet-width ){
+            background-size: cover;        
+
+        }
+        .title {
+            border-radius: 18px;
+            backdrop-filter: blur(10px);
+            text-align: left;
+            padding: 50px;
+            width: 40%;
+            margin-left: 80px;
+            @media (max-width: $tablet-width) {
+                width: 100%;  
+                margin-left: auto;
+            }
+        }
+    }
+    .projects {
+        background-color: $general-color;
+        .cards {
+            margin: 0 auto;
+            padding: 30px;
+            width: 80%;
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card {
+                width: 300px;
+                background-color: rgba(255, 255, 255, 0.577);
+                text-align: left;
+                margin: 25px 15px;
+                border: none;
+                .card-title {
+                    background-color: $general-color;
+                    color: white;
+                    font-size: 24px;
+                    margin: 10px;
+                    padding: 5px;
+                    width: fit-content;
+                }
+                .card-text {
+                    margin: 10px;
+                }
+                button {
+                    display: none;
+                    padding: 10px;
+                    width: 100%;
+                    background-color: $general-color;
+                    border: none;
+                    color: white;
+                    font-size: 20px;
+
+                }
+                
+            }
+            .card:hover {
+                    transform: scale(1.2);
+                    button {
+                        display: block;
+                    }
+                }
+        }
+    }
+}

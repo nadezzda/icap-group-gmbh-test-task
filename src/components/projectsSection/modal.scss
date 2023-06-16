@@ -1,0 +1,23 @@
+@import '../../scss/_variables.scss';
+
+.modal {
+    background-color: #0919a945;
+    .modal-header {
+        background-color: #6670c7;
+    }
+    h6 {
+        margin-top: 30px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            background-color: $general-color;
+            color: white;
+            border-radius: 18px;
+            border: none;
+            padding: 8px;
+            margin: 5px;
+        }
+    }
+}
